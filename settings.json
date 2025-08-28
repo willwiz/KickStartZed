@@ -40,10 +40,16 @@
   "terminal": {
     "dock": "right"
   },
-  // AI and Coding assistance
   "format_on_save": "on",
+  // AI and Coding assistance
   "features": {
     "edit_prediction_provider": "copilot"
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3.7-sonnet"
+    }
   },
   "edit_predictions": {
     "mode": "eager"
