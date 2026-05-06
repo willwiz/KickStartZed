@@ -9,7 +9,9 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-`": "workspace::ToggleRightDock"
+      "ctrl-`": "workspace::ToggleRightDock",
+      "ctrl-alt-right": ["workspace::MoveItemToPaneInDirection", { "direction": "right" }],
+      "ctrl-alt-left": ["workspace::MoveItemToPaneInDirection", { "direction": "left" }]
     }
   },
   {
@@ -22,7 +24,15 @@
       "ctrl-f": "buffer_search::Deploy", // vim default: page down
       "ctrl-o": "workspace::Open", // vim default: go back
       "ctrl-s": "workspace::Save", // vim default: show signature
-      "ctrl-a": "editor::SelectAll" // vim default: increment
+      "ctrl-a": "editor::SelectAll", // vim default: increment
+      "ctrl-alt-right": ["workspace::MoveItemToPaneInDirection", { "direction": "right" }],
+      "ctrl-alt-left": ["workspace::MoveItemToPaneInDirection", { "direction": "left" }]
+    }
+  },
+  {
+    "context": "(Editor && mode == full)",
+    "bindings": {
+      "alt-z": "editor::ToggleSoftWrap"
     }
   }
 ]

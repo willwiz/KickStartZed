@@ -11,22 +11,37 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha"
   },
   "icon_theme": "Catppuccin Mocha",
   // Editor Layout
+  "cli_default_open_behavior": "new_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "git_panel": {
+    "dock": "left",
+    "tree_view": true
+  },
+  "restore_on_startup": "launchpad",
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "centered_layout": {
     "left_padding": 0.2,
-    "right_padding": 0.0,
+    "right_padding": 0.0
   },
   "indent_guides": {
     "enabled": true,
     "line_width": 1,
     "active_line_width": 1,
     "coloring": "fixed",
-    "background_coloring": "disabled",
+    "background_coloring": "disabled"
   },
   "show_whitespaces": "all",
   "soft_wrap": "preferred_line_length",
@@ -38,21 +53,21 @@
   "base_keymap": "VSCode",
   "relative_line_numbers": "enabled",
   "terminal": {
-    "dock": "right",
+    "dock": "right"
   },
   "format_on_save": "on",
   // AI and Coding assistance
   "features": {
-    "edit_prediction_provider": "copilot",
+    "edit_prediction_provider": "copilot"
   },
   "agent": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-3.7-sonnet",
-    },
+      "model": "claude-3.7-sonnet"
+    }
   },
   "edit_predictions": {
-    "mode": "eager",
+    "mode": "eager"
   },
   "inlay_hints": {
     "enabled": true,
@@ -68,8 +83,8 @@
       "alt": false,
       "shift": false,
       "platform": false,
-      "function": false,
-    },
+      "function": false
+    }
   },
   // Languages and LSP
   "languages": {
@@ -79,18 +94,18 @@
       "format_on_save": "on",
       "formatter": [
         {
-          "code_action": "source.organizeImports.ruff",
+          "code_action": "source.organizeImports.ruff"
         },
         {
-          "code_action": "source.fixAll.ruff",
+          "code_action": "source.fixAll.ruff"
         },
         {
           "language_server": {
-            "name": "ruff",
-          },
-        },
-      ],
-    },
+            "name": "ruff"
+          }
+        }
+      ]
+    }
   },
   "lsp": {
     "ruff": {
@@ -105,21 +120,21 @@
             "enable": true,
             "preview": true,
             "select": ["ALL"],
-            "ignore": ["T201", "T203", "G004", "G010", "ERA001", "TRY401", "PLE1205", "S603"],
-          },
-        },
-      },
+            "ignore": ["T201", "T203", "G004", "G010", "ERA001", "TRY401", "PLE1205", "S603"]
+          }
+        }
+      }
     },
     "pyright": {
       "settings": {
         "python.analysis": {
           "diagnosticMode": "workspace",
-          "typeCheckingMode": "strict",
+          "typeCheckingMode": "strict"
         },
         "python": {
-          "pythonPath": ".venv/bin/python",
-        },
-      },
-    },
-  },
+          "pythonPath": ".venv/bin/python"
+        }
+      }
+    }
+  }
 }
