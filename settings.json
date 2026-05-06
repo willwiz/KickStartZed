@@ -47,7 +47,7 @@
   "soft_wrap": "preferred_line_length",
   "preferred_line_length": 100,
   "show_wrap_guides": true,
-  "wrap_guides": [80, 100, 120],
+  "wrap_guides": [100, 120],
   // Workspace Layout
   "vim_mode": true,
   "base_keymap": "VSCode",
@@ -57,20 +57,19 @@
   },
   "format_on_save": "on",
   // AI and Coding assistance
-  "features": {
-    "edit_prediction_provider": "copilot"
-  },
   "agent": {
+    "dock": "left",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-3.7-sonnet"
+      "model": "gpt-5-mini"
     }
   },
   "edit_predictions": {
+    "provider": "copilot",
     "mode": "eager"
   },
   "inlay_hints": {
-    "enabled": true,
+    "enabled": false,
     "show_value_hints": true,
     "show_type_hints": true,
     "show_parameter_hints": true,
@@ -80,8 +79,8 @@
     "scroll_debounce_ms": 50,
     "toggle_on_modifiers_press": {
       "control": false,
-      "alt": false,
-      "shift": false,
+      "alt": true,
+      "shift": true,
       "platform": false,
       "function": false
     }
