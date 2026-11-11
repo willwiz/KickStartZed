@@ -35,4 +35,18 @@
       "alt-z": "editor::ToggleSoftWrap",
     },
   },
+  {
+    "context": "Editor && edit_prediction",
+    "unbind": {
+      "tab": "editor::AcceptEditPrediction",
+      "alt-tab": "editor::AcceptEditPrediction",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-left": "pane::GoBack",
+      "alt-right": "pane::GoForward",
+    },
+  },
 ]

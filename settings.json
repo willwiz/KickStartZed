@@ -8,6 +8,55 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // Theme Related
+  "ssh_connections": [
+    {
+      "host": "blue",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/willwz/files/proj/10-TASFA/./"
+          ]
+        },
+        {
+          "paths": [
+            "/home/willwz/files/proj/aorta-dissection-predictor/./"
+          ]
+        },
+        {
+          "paths": [
+            "/home/willwz/files/proj/cardiomyocyte/./"
+          ]
+        },
+        {
+          "paths": [
+            "/home/willwz/files/proj/macaroni"
+          ]
+        },
+        {
+          "paths": [
+            "/home/willwz/software/cheart/source-code/./"
+          ]
+        },
+        {
+          "paths": [
+            "/mnt/raid5/usr/willwz/proj/07-kamenskiy/./"
+          ]
+        }
+      ]
+    },
+    {
+      "host": "blue",
+      "args": [],
+      "projects": [
+        {
+          "paths": [
+            "/home/willwz/files/proj/07-kamenskiy"
+          ]
+        }
+      ]
+    }
+  ],
   "theme": {
     "mode": "system",
     "light": "One Light",
@@ -59,10 +108,6 @@
   // AI and Coding assistance
   "agent": {
     "dock": "left",
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "gpt-5-mini",
-    },
   },
   "edit_predictions": {
     "provider": "copilot",
@@ -105,11 +150,24 @@
         },
       ],
     },
+    "Markdown": {
+      "format_on_save": "on",
+      "formatter": [
+        {
+          "external": {
+            "command": "mdformat",
+            "arguments": ["-"],
+          },
+        },
+        "auto",
+      ],
+    },
   },
   "lsp": {
     "ruff": {
       "initialization_options": {
         "settings": {
+          "configurationPreference": "filesystemFirst",
           "organizedImports": true,
           "linelength": 100,
           "fixAll": true,
